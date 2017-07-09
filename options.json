@@ -1,0 +1,45 @@
+[
+  {
+    "option": "Type",
+    "possible": [
+      {
+        "code": "1W",
+        "option": "One-Way"
+      },
+      {
+        "code": "2W",
+        "option": "Two-Way"
+      }
+    ]
+  },
+  {
+    "option": "Scope",
+    "possible": [
+      {
+        "code": "Open",
+        "option": "Open-Ended"
+      },
+      {
+        "code": "ID",
+        "option": "Identified"
+      }
+    ]
+  },
+  {
+    "option": "Parties",
+    "possible": [
+      {
+        "code": "B2B",
+        "option": "Business-to-Business"
+      },
+      {
+        "code": "B2I",
+        "option": "Business-to-Individual"
+      },
+      {
+        "code": "I2B",
+        "option": "Individual-to-Business"
+      }
+    ]
+  }
+]
