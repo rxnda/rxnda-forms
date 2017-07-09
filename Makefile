@@ -10,7 +10,15 @@ MD=$(addprefix $(OUTPUT)/,$(addsuffix .md,$(FORMS)))
 JSON=$(addprefix $(OUTPUT)/,$(addsuffix .json,$(FORMS)))
 TARGETS=$(DOCX) $(PDF) $(MD) $(JSON)
 
-all: $(TARGETS)
+all: docx pdf md cf
+
+docx: $(DOCX)
+
+pdf: $(PDF)
+
+md: $(MD)
+
+json: $(JSON)
 
 $(OUTPUT):
 	mkdir -p $@
