@@ -39,6 +39,8 @@ $(OUTPUT)/%-B2I.signatures: signatures/B2I.json | $(OUTPUT)
 $(OUTPUT)/%-I2B.signatures: signatures/I2B.json | $(OUTPUT)
 	cp $< $@
 
+.NOTPARALLEL: %.pdf
+
 %.pdf: %.docx
 	doc2pdf $<
 
