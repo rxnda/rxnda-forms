@@ -16,12 +16,12 @@
     "option": "Scope",
     "possible": [
       {
-        "code": "Open",
-        "option": "Open-Ended"
+        "code": "B",
+        "option": "Broad"
       },
       {
-        "code": "ID",
-        "option": "Identified"
+        "code": "N",
+        "option": "Narrow"
       }
     ]
   },
