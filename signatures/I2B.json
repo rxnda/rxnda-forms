@@ -1,6 +1,7 @@
 [
   {
     "header": "The parties are signing this agreement on the dates by their signatures.",
+    "term": "First Signatory",
     "information": [
       "date",
       "email"
@@ -8,6 +9,7 @@
   },
   {
     "header": "The parties are signing this agreement on the dates by their signatures.",
+    "term": "Second Signatory",
     "entities": [
       {}
     ],

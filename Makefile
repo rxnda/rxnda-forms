@@ -27,7 +27,7 @@ $(OUTPUT)/%.md: $(OUTPUT)/%.cform blanks.json | $(COMMONFORM) $(OUTPUT)
 	$(COMMONFORM) render --format markdown --title "$*" --blanks blanks.json < $< > $@
 
 $(OUTPUT)/%.docx: $(OUTPUT)/%.cform $(OUTPUT)/%.signatures blanks.json | $(COMMONFORM) $(OUTPUT)
-	$(COMMONFORM) render --format docx --title "$*" --number outline --signatures $(OUTPUT)/$*.signatures --blanks blanks.json < $< > $@
+	$(COMMONFORM) render --format docx --title "$*" --indent-margins --number outline --signatures $(OUTPUT)/$*.signatures --blanks blanks.json < $< > $@
 
 $(OUTPUT)/%.cform: master.cftemplate $(OUTPUT)/%.options | $(CFTEMPLATE) $(OUTPUT)
 	$(CFTEMPLATE) $< $(OUTPUT)/$*.options > $@
