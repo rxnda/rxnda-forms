@@ -30,13 +30,13 @@ $(OUTPUT)/%.options: | $(OUTPUT)
 $(OUTPUT)/%.json: $(OUTPUT)/%.cform | $(COMMONFORM) $(OUTPUT)
 	$(COMMONFORM) render --format native < $< > $@
 
-$(OUTPUT)/%-B2B.signatures: B2B.signatures.json | $(OUTPUT)
+$(OUTPUT)/%-B2B.signatures: signatures/B2B.json | $(OUTPUT)
 	cp $< $@
 
-$(OUTPUT)/%-B2I.signatures: B2I.signatures.json | $(OUTPUT)
+$(OUTPUT)/%-B2I.signatures: signatures/B2I.json | $(OUTPUT)
 	cp $< $@
 
-$(OUTPUT)/%-I2B.signatures: I2B.signatures.json | $(OUTPUT)
+$(OUTPUT)/%-I2B.signatures: signatures/I2B.json | $(OUTPUT)
 	cp $< $@
 
 %.pdf: %.docx
