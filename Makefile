@@ -38,14 +38,8 @@ $(OUTPUT)/%.options: | $(OUTPUT)
 $(OUTPUT)/%.json: $(OUTPUT)/%.cform | $(COMMONFORM) $(OUTPUT)
 	$(COMMONFORM) render --format native < $< > $@
 
-$(OUTPUT)/%-B2B.signatures: signatures/B2B.json | $(OUTPUT)
-	cp $< $@
-
-$(OUTPUT)/%-B2I.signatures: signatures/B2I.json | $(OUTPUT)
-	cp $< $@
-
-$(OUTPUT)/%-I2B.signatures: signatures/I2B.json | $(OUTPUT)
-	cp $< $@
+$(OUTPUT)/%.signatures: signatures-for-id.js | $(OUTPUT)
+	./signatures-for-id.js $* > $@
 
 .NOTPARALLEL: %.pdf
 

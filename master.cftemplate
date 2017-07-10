@@ -3,7 +3,7 @@
 # - Two spaces after a heading.
 # - Two spaces after each sentence.
 (( if One-Way begin ))
-This agreement sets out terms that protect <Confidential Information> that <Personnel> of the first signatory, or ""Disclosing Party"", may disclose to <Personnel> of the second signatory, or ""Receiving Party"".
+This agreement sets out terms that protect <Confidential Information> that ""Disclosing Party"" <Personnel> may disclose to ""Receiving Party"" <Personnel>.
 (( end ))
 
 (( if Two-Way begin ))

@@ -1,18 +1,5 @@
 [
   {
-    "option": "Type",
-    "possible": [
-      {
-        "code": "1W",
-        "option": "One-Way"
-      },
-      {
-        "code": "2W",
-        "option": "Two-Way"
-      }
-    ]
-  },
-  {
     "option": "Scope",
     "possible": [
       {
@@ -22,6 +9,19 @@
       {
         "code": "N",
         "option": "Narrow"
+      }
+    ]
+  },
+  {
+    "option": "Type",
+    "possible": [
+      {
+        "code": "1W",
+        "option": "One-Way"
+      },
+      {
+        "code": "2W",
+        "option": "Two-Way"
       }
     ]
   },
