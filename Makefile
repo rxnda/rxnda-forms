@@ -49,7 +49,13 @@ $(OUTPUT)/%.signatures: signatures-for-id.js | $(OUTPUT)
 $(COMMONFORM) $(CFTEMPLATE):
 	npm install
 
-.PHONY: clean docker
+.PHONY: clean docker lint critique
+
+lint: $(JSON) | $(COMMONFORM)
+	for form in $(JSON); do echo $$form; $(COMMONFORM) lint < $$form; done
+
+critique: $(JSON) | $(COMMONFORM)
+	for form in $(JSON); do echo $$form ; $(COMMONFORM) critique < $$form; done
 
 clean:
 	rm -rf $(OUTPUT)

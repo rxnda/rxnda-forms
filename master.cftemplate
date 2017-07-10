@@ -46,7 +46,7 @@ This agreement sets out terms that protect <Confidential Information> the partie
                 (( if Entity Recipient begin ))
                 \\  employees, independent contractors, officers, directors, and agents of <Receiving Party> (""Personnel"") who have a need to know the <Confidential Information> to advance the <Purpose> and have written confidentiality agreements with <Receiving Party> that impose confidentiality obligations covering <Confidential Information>; and
                 (( end ))
-                \\ legal and financial advisers providing services to <Receiving Party> regulated by laws or professional rules that impose confidentiality obligations (""Advisers"").
+                \\ legal and financial advisers providing services to <Receiving Party> regulated by laws or professional rules that impose confidentiality obligations((if Entity Recipient begin)) (""Advisers"")((end)).
 
         \Limited Use\  <Receiving Party> shall use <Confidential Information> only to advance the <Purpose>.
 
@@ -72,7 +72,9 @@ This agreement sets out terms that protect <Confidential Information> the partie
 
         \Comply with Export Controls\  Both <Disclosing Party> and <Receiving Party> shall comply with export and reexport laws with respect to <Confidential Information>.
 
-        \Personnel\  <Receiving Party> shall ensure that its <Personnel> and <Advisers> abide by the confidentiality obligations of <Receiving Party> under this agreement.  <Receiving Party> shall provide <Disclosing Party> copies of confidentiality agreements with <Personnel> who receive <Confidential Information> on request.  Breach of this <Receiving Party> obligations by <Receiving Party> <Personnel> or <Advisers> will be deemed breach of this agreement by <Receiving Party> itself.
+        (( if Entity Recipient begin ))
+        \Compliance\  <Receiving Party> shall ensure that its <Personnel> and <Advisers> abide by the confidentiality obligations of <Receiving Party> under this agreement.  <Receiving Party> shall provide <Disclosing Party> copies of confidentiality agreements with <Personnel> who receive <Confidential Information> on request.  Breach of this <Receiving Party> obligations by <Receiving Party> <Personnel> or <Advisers> will be deemed breach of this agreement by <Receiving Party> itself.
+        (( end ))
 
     \Clarifications\
 
