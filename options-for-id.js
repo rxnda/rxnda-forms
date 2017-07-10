@@ -11,10 +11,23 @@ var match = powerset.find(function (combination) {
 
 console.log(
   JSON.stringify(
-    match.reduce(function (options, element) {
-      options[element.option] = true
-      return options
-    }, {}),
+    addDerivedProperties(
+      match.reduce(function (options, element) {
+        options[element.option] = true
+        return options
+      }, {})
+    ),
     null, 2
   )
 )
+
+function addDerivedProperties (x) {
+  if (
+    x['Business-to-Business'] ||
+    (x['One-Way'] && x['Individual-to-Business']) ||
+    (x['Two-Way'] && !x['Individual-to-Individual'])
+  ) {
+    x['Entity Recipient'] = true
+  }
+  return x
+}

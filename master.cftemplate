@@ -12,69 +12,79 @@ This agreement sets out terms that protect <Confidential Information> the partie
 
     \Purpose\ The parties anticipate disclosure of <Confidential Information> for the purpose of [Purpose] (the ""Purpose"").
 
-    (( unless Individual-to-Individual begin ))
-    \Personnel\  Throughout this agreement, any reference to a party that is a business entity refers to the party itself, as well as its employees, independent contractors, professional service providers, officers, directors, and agents.  A party that is a business entity shall ensure that such personnel abide by the terms of this agreement.
-    (( end ))
-
     \Confidential Information\
 
         \\ Subject to {Exclusions}, ""Confidential Information"" means information 
 
         (( if Broad begin ))
-        related to the business of the <Disclosing Party>, 
+        related to the business of <Disclosing Party>, 
         (( end ))
 
         (( if Narrow begin ))
-        disclosed in writing that is marked to indicate that it is confidential, and information disclosed otherwise that the <Disclosing Party> identifies in writing as confidential within one calendar week, 
+        disclosed in writing that is marked to indicate that it is confidential, and information disclosed otherwise that <Disclosing Party> identifies in writing as confidential within one calendar week, 
         (( end ))
 
         and other information derived from such information. 
 
-        The existence and content of this this agreement are also <Confidential Information>.
+        The existence and content of this agreement are also <Confidential Information>.
 
         \Exclusions\
 
             \Public Information\  Public information that is or becomes public, other than as a result of breach of this agreement, is not, or ceases to be, <Confidential Information>.
 
-            \Otherwise Acquired Information\  Information that the <Receiving Party> received or receives from other than the <Disclosing Party> is not <Confidential Information>, unless the disclosure breached a confidentiality obligation to the <Disclosing Party> that the <Disclosing Party> made known to the <Receiving Party>.
+            \Otherwise Acquired Information\  Information that <Receiving Party> received or receives from other than <Disclosing Party> is not <Confidential Information>, unless the disclosure breached a confidentiality obligation to <Disclosing Party> that <Disclosing Party> made known to <Receiving Party>.
 
-            \Independently Developed Information\  Information the <Receiving Party> developed or develops independently is not, or ceases to be, <Confidential Information> of the <Disclosing Party>.  The <Receiving Party> will bear the burden of proving independent development using contemporaneous documentary evidence.
+            \Independently Developed Information\  Information <Receiving Party> developed independently or develops independently is not, or ceases to be, <Confidential Information> of <Disclosing Party>.  <Receiving Party> will bear the burden of proving independent development using contemporaneous documentary evidence.
 
     \Obligations\
-        \Covenant Not to Disclose\ ...
-            \Permitted Disclosure to Personnel\ ...
-                \Need-to-Know Basis\ ...
-                \Need-to-Know Basis\ ...
-        \Covenant to Use Only for Purpose\ ...
-        \Preserve Proprietary Notices\ ...
-        \No Trading Securities\ ...
-        \No Reverse Engineering\ ...
-        \Legally Required Disclosure\ ...
-            \Notice of Legally Required Disclosure\ ...
-            \Cooperation Against Legally Required Disclosure\ ...
-            \Reimburse Expenses of Cooperation\ ...
-        \Comply with Export Controls\ ...
-        \Personnel\
-            \Responsibility for Personnel\ ...
-            \Personnel Confidentiality Terms\ ...
-            \Agreement\ ...
-            \Professional Obligations\ ...
+
+        \Nondisclosure\
+
+            \\  Subject to {Permitted Disclosure}, <Receiving Party> shall not disclose <Confidential Information> to anyone.
+
+            \Permitted Disclosure\  <Receiving Party> may disclose <Confidential Information> to the following personnel:
+                (( if Entity Recipient begin ))
+                \\  employees, independent contractors, officers, directors, and agents of <Receiving Party> (""Personnel"") who have a need to know the <Confidential Information> to advance the <Purpose> and have written confidentiality agreements with <Receiving Party> that impose confidentiality obligations covering <Confidential Information>; and
+                (( end ))
+                \\ legal and financial advisers providing services to <Receiving Party> regulated by laws or professional rules that impose confidentiality obligations (""Advisers"").
+
+        \Limited Use\  <Receiving Party> shall use <Confidential Information> only to advance the <Purpose>.
+
+        \Preserve Proprietary Notices\  <Receiving Party> shall not remove any proprietary notices attached to materials embodying <Confidential Information>.
+
+        \No Illegal Dealing in Securities\  <Receiving Party> party shall not purchase, sell, or otherwise deal in securities of <Disclosing Party> on the basis of <Confidential Information> that is "material, non-public information", in breach of securities laws.  <Receiving Party> shall instruct anyone to whom it discloses <Confidential Information> that may be "material, non-public information" not to deal in securities of <Disclosing Party>.
+
+        \No Reverse Engineering\  <Receiving Party> shall not reverse engineer any material constituting or embodying <Confidential Information>.
+
+        \Legally Required Disclosure\  The following obligations apply whenever the law requires disclosure of <Confidential Information>, and whenever <Receiving Party> reasonably expects that the law may require such disclosure.
+
+            \Notice of Legally Required Disclosure\  If legally permitted, <Receiving Party> shall promptly notify <Disclosing Party> of the nature of the requirement and the <Confidential Information> affected.  If practical, <Receiving Party> shall give notice quickly enough to afford <Disclosing Party> practical opportunity to start a proceeding to protect the confidentiality of the <Confidential Information>.  On <Disclosing Party> request, <Receiving Party> shall cooperate with <Disclosing Party> in any such proceeding.
+
+            \Reimburse Expenses of Cooperation\  <Disclosing Party> shall reimburse <Receiving Party>'s reasonable out-of-pocket expenses of cooperating in any proceeding to preserve confidentiality.
+
         \Return and Destroy\ ...
+
             \Records Policy Exception\ ...
+
             \Retain File Copy for Compliance\ ...
+
         \Data Security\ ...
+
+        \Comply with Export Controls\  Both <Disclosing Party> and <Receiving Party> shall comply with export and reexport laws with respect to <Confidential Information>.
+
+        \Personnel\  <Receiving Party> shall ensure that its <Personnel> and <Advisers> abide by the confidentiality obligations of <Receiving Party> under this agreement.  <Receiving Party> shall provide <Disclosing Party> copies of confidentiality agreements with <Personnel> who receive <Confidential Information> on request.  Breach of this <Receiving Party> obligations by <Receiving Party> <Personnel> or <Advisers> will be deemed breach of this agreement by <Receiving Party> itself.
 
     \Clarifications\
 
-        \Freedom to Operate\  No terms of this agreement preclude ((if One-Way begin ))the <Receiving Party>((end))((if Two-Way begin))either party, as <Receiving Party>,((end)) from:
+        \Freedom to Operate\  No terms of this agreement preclude ((if One-Way begin ))<Receiving Party>((end))((if Two-Way begin))either party, as <Receiving Party>,((end)) from:
 
-            \\  competing with the <Disclosing Party>;
+            \\  competing with <Disclosing Party>;
 
             \\  entering into any business relationship with any non-party; or
 
             \\  freely assigning and reassigning personnel in its sole discretion.
 
-        \No Obligation to Disclose\  No terms of this agreement obligate ((if One-Way begin))the <Disclosing Party>((end))((if Two-Way begin))either party((end)) to disclose any <Confidential Information>, perform any work, or provide any services.
+        \No Obligation to Disclose\  No terms of this agreement obligate ((if One-Way begin))<Disclosing Party>((end))((if Two-Way begin))either party((end)) to disclose any <Confidential Information>, perform any work, or provide any services.
 
         \No Obligation to Do Business\  No terms of this agreement obligate either party to enter any business relationship of agreement, related to the <Purpose> or otherwise.
 
@@ -93,23 +103,28 @@ This agreement sets out terms that protect <Confidential Information> the partie
             \\  is made in a complaint or other document filed in a lawsuit or other proceeding, if such filing is made under seal.
 
     \Warranty of Right to Disclose\ ...
-    \Equitable Remedies Recital\ ...
-    \Common Interest\ ...
+
+    \Equitable Remedies Recital\  Breach of any obligation under this agreement could cause irreparable harm that money damages could not adequately compensate.  ((if One-Way begin))<Disclosing Party>((end))((if Two-Way begin))Either party, as <Disclosing Party>,((end)) will be entitled to seek an injunction, restraining order, and other equitable remedies for breach of this agreement, without posting bond or security, and without proving actual damages.
+
     \Warranty Disclaimer\ ...
 
     \Security Precautions\ ...
         \Care for Own Confidential Information\ ...
         \Reasonable Care\ ...
 
-    \Term\ ...
-        \Expiration\ ...
+    \Term\
+
+        \Expiration\  Unless extended by mutual, written agreement of the parties, this agreement will expire automatically after one calendar year.
+
+        \Termination by Notice\  Either party may terminate this agreement on thirty calendar days' prior written notice to the other party.
+
         \Survival of Nonuse and Disclosure Obligations\ ...
+
         \Survival re Trade Secrets\ ...
-        \Termination by Notice\ ...
 
     \General Contract Terms\
 
-        \No Assignment\  Neither party may assign any right under this agreement without the prior, signed, written permission of the other party.  Any attempt to assign rights under this agreement has no legal effect.
+        \No Assignment or Delegation\  Neither party may assign any right or delegate any obligation under this agreement without the prior, signed, written permission of the other party.  Any attempt to assign or delegate will have no legal effect.
 
         \Governing Law\  The law of [Governing Law State] will govern all aspects of this agreement.
 
