@@ -43,32 +43,40 @@ This agreement sets out terms that protect <Confidential Information> the partie
             \\  Subject to {Permitted Disclosure}, <Receiving Party> shall not disclose <Confidential Information> to anyone.
 
             \Permitted Disclosure\  <Receiving Party> may disclose <Confidential Information> to the following personnel:
+
                 (( if Entity Recipient begin ))
                 \\  employees, independent contractors, officers, directors, and agents of <Receiving Party> (""Personnel"") who have a need to know the <Confidential Information> to advance the <Purpose> and have written confidentiality agreements with <Receiving Party> that impose confidentiality obligations covering <Confidential Information>; and
                 (( end ))
+
                 \\ legal and financial advisers providing services to <Receiving Party> regulated by laws or professional rules that impose confidentiality obligations((if Entity Recipient begin)) (""Advisers"")((end)).
 
         \Limited Use\  <Receiving Party> shall use <Confidential Information> only to advance the <Purpose>.
+
+        \Security Measures\  <Receiving Party> shall take measures to secure materials embodying <Confidential Information> at least as protective as those <Receiving Party> employs to secure its own <Confidential Information>, but in any event no less than reasonable measures.
 
         \Preserve Proprietary Notices\  <Receiving Party> shall not remove any proprietary notices attached to materials embodying <Confidential Information>.
 
         \No Illegal Dealing in Securities\  <Receiving Party> party shall not purchase, sell, or otherwise deal in securities of <Disclosing Party> on the basis of <Confidential Information> that is "material, non-public information", in breach of securities laws.  <Receiving Party> shall instruct anyone to whom it discloses <Confidential Information> that may be "material, non-public information" not to deal in securities of <Disclosing Party>.
 
-        \No Reverse Engineering\  <Receiving Party> shall not reverse engineer any material constituting or embodying <Confidential Information>.
+        \No Reverse Engineering\  <Receiving Party> shall not reverse engineer any material embodying <Confidential Information>.
 
-        \Legally Required Disclosure\  The following obligations apply whenever the law requires disclosure of <Confidential Information>, and whenever <Receiving Party> reasonably expects that the law may require such disclosure.
+        \Legally Required Disclosure\  The following obligations apply when the law requires disclosure of <Confidential Information>, and when <Receiving Party> reasonably expects that the law may require disclosure of <Confidential Information>.
 
             \Notice of Legally Required Disclosure\  If legally permitted, <Receiving Party> shall promptly notify <Disclosing Party> of the nature of the requirement and the <Confidential Information> affected.  If practical, <Receiving Party> shall give notice quickly enough to afford <Disclosing Party> practical opportunity to start a proceeding to protect the confidentiality of the <Confidential Information>.  On <Disclosing Party> request, <Receiving Party> shall cooperate with <Disclosing Party> in any such proceeding.
 
             \Reimburse Expenses of Cooperation\  <Disclosing Party> shall reimburse <Receiving Party>'s reasonable out-of-pocket expenses of cooperating in any proceeding to preserve confidentiality.
 
-        \Return and Destroy\ ...
+        \Leak Notice\  <Receiving Party> shall give <Disclosing Party> notice when <Receiving Party> becomes aware, or suspects, that <Confidential Information> has been disclosed or used in breach of this agreement or other confidentiality agreements with <Disclosing Party>.
 
-            \Records Policy Exception\ ...
+        \Return and Destruction\
 
-            \Retain File Copy for Compliance\ ...
+            \\  Subject to {Records Policy}, on termination of this agreement, <Receiving Party> shall promptly:
 
-        \Data Security\ ...
+                \\  return all materials provided by <Disclosing Party> that embody <Confidential Provide> and that <Disclosing Party> requested be returned; and
+
+                \\  destroy all other materials embodying <Confidential Information>.
+
+            \Records Policy\  If <Receiving Party> has a written records retention policy for the creation and scheduled destruction of material in archival or backup form normally accessible only to specialized personnel, <Receiving Party> may retain materials embodying <Confidential Information> according to that policy until scheduled destruction.
 
         \Comply with Export Controls\  Both <Disclosing Party> and <Receiving Party> shall comply with export and reexport laws with respect to <Confidential Information>.
 
@@ -92,9 +100,9 @@ This agreement sets out terms that protect <Confidential Information> the partie
 
         \No License\  No terms of this agreement grant any license for any patent, trademark, copyright, or other intellectual property.
 
-    \Notices\
+    \18 U.S.C. 1833(b)(1) Notice\
 
-        \18 U.S.C. section 1833(b)(1) Notice\  An individual shall not be held criminally or civilly liable under any Federal or State trade secret law for the disclosure of a trade secret that:
+        \\  An individual shall not be held criminally or civilly liable under any Federal or State trade secret law for the disclosure of a trade secret that:
 
             \\  is made:
 
@@ -103,6 +111,12 @@ This agreement sets out terms that protect <Confidential Information> the partie
                 \\  solely for the purpose of reporting or investigating a suspected violation of law; or
 
             \\  is made in a complaint or other document filed in a lawsuit or other proceeding, if such filing is made under seal.
+
+        \\  An individual who files a lawsuit for retaliation by an employer for reporting a suspected violation of law may disclose the trade secret to the attorney of the individual and use the trade secret information in the court proceeding, if the individual:
+
+            \\  files any document containing the trade secret under seal; and
+
+            \\  does not disclose the trade secret, except pursuant to court order.
 
     \Warranty of Right to Disclose\ ...
 
@@ -120,9 +134,7 @@ This agreement sets out terms that protect <Confidential Information> the partie
 
         \Termination by Notice\  Either party may terminate this agreement on thirty calendar days' prior written notice to the other party.
 
-        \Survival of Nonuse and Disclosure Obligations\ ...
-
-        \Survival re Trade Secrets\ ...
+        \Survival\  Obligations under {Obligations} survive the term of this agreement for <Confidential Information> disclosed during the term for a period of five calendar years.
 
     \General Contract Terms\
 
