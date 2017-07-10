@@ -10,6 +10,8 @@ This agreement sets out terms that protect <Confidential Information> that ""Dis
 This agreement sets out terms that protect <Confidential Information> the parties may exchange.  ""Disclosing Party"" describes each party with respect to <Confidential Information> it discloses.  ""Receiving Party"" describes each party with respect to <Confidential Information> it receives.
 (( end ))
 
+    \Published Form\  This is a form agreement published by [Publisher Name].  See [URL] for license terms and other information.
+
     \Purpose\ The parties anticipate disclosure of <Confidential Information> for the purpose of [Purpose] (the ""Purpose"").
 
     \Confidential Information\
@@ -68,35 +70,39 @@ This agreement sets out terms that protect <Confidential Information> the partie
 
         \No Reverse Engineering\  <Receiving Party> shall not reverse engineer any material embodying <Confidential Information>.
 
-        \Legally Required Disclosure\  The following obligations apply when the law requires disclosure of <Confidential Information>, and when <Receiving Party> reasonably expects that the law may require disclosure of <Confidential Information>.
+        \Mitigate Legally Required Disclosure\  The following obligations apply when the law requires disclosure of <Confidential Information>, and when <Receiving Party> reasonably expects that the law may require disclosure of <Confidential Information>.
 
-            \Notice of Legally Required Disclosure\  If legally permitted, <Receiving Party> shall promptly notify <Disclosing Party> of the nature of the requirement and the <Confidential Information> affected.  If practical, <Receiving Party> shall give notice quickly enough to afford <Disclosing Party> practical opportunity to start a proceeding to protect the confidentiality of the <Confidential Information>.  On <Disclosing Party> request, <Receiving Party> shall cooperate with <Disclosing Party> in any such proceeding.
+            \Give Notice of Required Disclosure\  If legally permitted, <Receiving Party> shall promptly notify <Disclosing Party> of the nature of the requirement and the <Confidential Information> affected.  If practical, <Receiving Party> shall give notice quickly enough to afford <Disclosing Party> practical opportunity to start a proceeding to protect the confidentiality of the <Confidential Information>.  On <Disclosing Party> request, <Receiving Party> shall cooperate with <Disclosing Party> in any such proceeding.
 
-            \Reimburse Expenses of Cooperation\  <Disclosing Party> shall reimburse <Receiving Party>'s reasonable out-of-pocket expenses of cooperating in any proceeding brought under {Notice of Legally Required Disclosure}.
+            \Reimburse Expenses of Cooperation\  <Disclosing Party> shall reimburse <Receiving Party>'s reasonable out-of-pocket expenses of cooperating in any proceeding brought under {Give Notice of Required Disclosure}.
 
-        \Notice of Leaks\  <Receiving Party> shall give <Disclosing Party> notice when <Receiving Party> becomes aware, or suspects, that <Confidential Information> has been disclosed or used in breach of this agreement or other confidentiality agreements with <Disclosing Party>.
+        \Give Notice of Leaks\  <Receiving Party> shall give <Disclosing Party> notice when <Receiving Party> becomes aware, or suspects, that <Confidential Information> has been disclosed or used in breach of this agreement or other confidentiality agreements with <Disclosing Party>.
 
         \Return and Destruction\
 
             \\  Subject to {Records Policy}, on termination of this agreement, <Receiving Party> shall promptly:
 
-                \\  return all materials provided by <Disclosing Party> that embody <Confidential Information> and that <Disclosing Party> requested be returned; and
+                \\  return all materials embodying <Confidential Information> that <Disclosing Party> provided with request to return; and
 
                 \\  destroy all other materials embodying <Confidential Information>.
 
-            \Records Policy\  If <Receiving Party> has a written records retention policy for the creation and scheduled destruction of material in archival or backup form normally accessible only to specialized personnel, <Receiving Party> may retain materials embodying <Confidential Information> according to that policy until scheduled destruction.
+            \Records Policy\  If <Receiving Party> has a written records retention policy for the creation and scheduled destruction of archival or backup records normally accessible only to specialized personnel, <Receiving Party> may retain materials embodying <Confidential Information> according to that policy until timely destruction under that policy.
 
         \Comply with Export Controls\  Both <Disclosing Party> and <Receiving Party> shall comply with export and reexport laws with respect to <Confidential Information>.
 
         (( if Entity Recipient begin ))
-        \Individual Compliance\  <Receiving Party> shall ensure that its <Personnel> and <Advisers> abide by the confidentiality obligations of <Receiving Party> under this agreement.  <Receiving Party> shall provide <Disclosing Party> copies of confidentiality agreements with <Personnel> who receive <Confidential Information> on request.  Breach of this <Receiving Party> obligations by <Receiving Party> <Personnel> or <Advisers> will be deemed breach of this agreement by <Receiving Party> itself.
+        \Compliance and Oversight\
+
+            \\  <Receiving Party> shall ensure that its <Personnel> and <Advisers> abide by the confidentiality obligations of <Receiving Party> under this agreement.  Breach of this <Receiving Party> obligations by <Receiving Party> <Personnel> or <Advisers> will be deemed breach of this agreement by <Receiving Party> itself.
+
+            \\  <Receiving Party> shall provide <Disclosing Party> copies of confidentiality agreements with <Personnel> who receive <Confidential Information> on <Disclosing Party> request.
         (( end ))
 
     \Clarifications\
 
         \No Obligation to Disclose\  No terms of this agreement obligate ((if One-Way begin))<Disclosing Party>((end))((if Two-Way begin))either party((end)) to disclose any <Confidential Information>, perform any work, or provide any services.
 
-        \No Obligation to Do Business\  No terms of this agreement obligate either party to enter any business relationship of agreement, related to the <Purpose> or otherwise.
+        \No Obligation to Do Business\  No terms of this agreement obligate either party to enter any business relationship or agreement, related to the <Purpose> or otherwise.
 
         \No License\  No terms of this agreement grant any license for any patent, trademark, copyright, or other intellectual property.
 
@@ -128,22 +134,38 @@ This agreement sets out terms that protect <Confidential Information> the partie
 
             \\  does not disclose the trade secret, except pursuant to court order.
 
-    \Equitable Remedies Recital\  Breach of any obligation under this agreement could cause irreparable harm that money damages could not adequately compensate.  ((if One-Way begin))<Disclosing Party>((end))((if Two-Way begin))Either party, as <Disclosing Party>,((end)) will be entitled to seek an injunction, restraining order, and other equitable remedies for breach of this agreement, without posting bond or security, and without proving actual damages.
+    \Equitable Remedies\  Breach of any obligation under this agreement could cause irreparable harm that money damages could not adequately compensate.  ((if One-Way begin))<Disclosing Party>((end))((if Two-Way begin))Either party, as <Disclosing Party>,((end)) will be entitled to seek an injunction, restraining order, and other equitable remedies for <Receiving Party> breach of this agreement, without posting bond or security, and without proving actual damages.
 
     \Term\
 
-        \Expiration\  Unless extended by mutual, written agreement of the parties, this agreement will expire automatically after one calendar year.
+        \Expiration\  Unless extended by mutual, written agreement of the parties, this agreement will terminate automatically on the first anniversary of the date of this agreement.
 
-        \Termination by Notice\  Either party may terminate this agreement on thirty calendar days' prior written notice to the other party.
+        \Termination by Notice\  Either party may terminate this agreement early by thirty calendar days' prior written notice to the other party.
 
-        \Survival\  Obligations under {Obligations} survive the term of this agreement for <Confidential Information> disclosed during the term for a period of five calendar years.
+        \Survival\  Obligations under {Obligations} survive the term of this agreement for <Confidential Information> disclosed during the term for a period of five calendar years from the date of termination.
 
     \General Contract Terms\
 
-        \No Assignment or Delegation\  Neither party may assign any right or delegate any obligation under this agreement without the prior, signed, written permission of the other party.  Any attempt to assign or delegate will have no legal effect.
+        \No Assignment or Delegation\  Neither party may assign any right or delegate any obligation under this agreement without the prior, signed, written consent of the other party.  Any attempt to assign or delegate without consent will have no legal effect.
 
-        \Governing Law\  The law of [Governing Law State] will govern all aspects of this agreement.
+        \Dispute Resolution\  The law of [Governing Law State] will govern all aspects of this agreement.  The parties shall bring legal proceedings related to this agreement only in state or federal courts located in that state.  The parties consent to the exclusive jurisdiction of those courts, and waive any objection that legal proceedings brought in those courts are brought in an inconvenient forum.  The parties may enforce judgments of those courts in any appropriate forum.  A party shall pay attorney fees and costs that the other party incurs in any legal proceeding related to this agreement that results in final judgments in their favor on all of their claims.
 
-        \Forum for Litigation\ ...
+        \Independent Contractors\   This parties to this agreement are and remain independent contractors.  This agreement does not create any partnership, joint venture, agency, or similar relationship between the parties.
 
-        \No Business Relationship\ This agreement does not 
+        \Written Amendments and Waivers\  The parties will amend this agreement only by cosigned, written agreement.  The parties will waive parts of this agreement, if at all, only by written waiver describing the specific terms waived and in what particular instance, signed by the party waiving.
+
+        \Notices\  The parties shall send every notice, demand, consent, or request required or allowed by this agreement:
+
+            \\  by e-mail to the address provided by the other party with their signature; or
+
+            \\  by overnight courier, with signature required for delivery, to the address provided the other party with their signature.
+
+        Either party may change its e-mail or postal address for subsequent communications by giving notice of a new address.
+
+        \Severability\ If a court decides than any part of this agreement is invalid or unenforceable for any reason, and that enforcing the rest of the agreement would not defeat the aim of protecting confidential information disclosed to advance the <Purpose>, then rest of this agreement will remain enforceable.
+
+        \No Third-Party Enforcement\ Only the parties may enforce rights under this agreement.
+
+        \Entire Agreement\ The parties intend the terms of this agreement as the final, complete, and only expression of their agreement about protection of <Confidential Information> exchanged to advance the <Purpose>.
+
+        \Signature\ A written or electronically signed copy of this <Agreement> delivered by fax, electronic mail, or other means has the legal effect of delivering a printed and signed original.

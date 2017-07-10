@@ -2,7 +2,7 @@
 var id = process.argv[2]
 var split = id.split('-')
 
-var information = ['date', 'email']
+var information = ['date', 'email', 'address']
 var header = (
   'The parties are signing this agreement ' +
   'on the dates by their signatures.'
