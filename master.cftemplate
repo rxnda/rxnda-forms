@@ -3,14 +3,18 @@
 # - Two spaces after a heading.
 # - Two spaces after each sentence.
 (( if One-Way begin ))
-This agreement sets out terms that protect <Confidential Information> that ""Disclosing Party"" <Personnel> may disclose to ""Receiving Party"" <Personnel>.
+This agreement sets out terms that protect <Confidential Information> that ""Disclosing Party"" may disclose to ""Receiving Party"".
 (( end ))
 
 (( if Two-Way begin ))
-This agreement sets out terms that protect <Confidential Information> that the parties' <Personnel> may disclose to one another.  Throughout these terms, the party whose <Personnel> receive <Confidential Information> is the ""Receiving Party"", and the party whose <Personnel> disclose <Confidential Information> is the ""Disclosing Party"".
+This agreement sets out terms that protect <Confidential Information> the parties may exchange.  ""Disclosing Party"" describes each party with respect to <Confidential Information> it discloses.  ""Receiving Party"" describes each party with respect to <Confidential Information> it receives.
 (( end ))
 
     \Purpose\ The parties anticipate disclosure of <Confidential Information> for the purpose of [Purpose] (the ""Purpose"").
+
+    (( unless Individual-to-Individual begin ))
+    \Personnel\  Throughout this agreement, any reference to a party that is a business entity refers to the party itself, as well as its employees, independent contractors, professional service providers, officers, directors, and agents.  A party that is a business entity shall ensure that such personnel abide by the terms of this agreement.
+    (( end ))
 
     \Confidential Information\
 
@@ -30,16 +34,11 @@ This agreement sets out terms that protect <Confidential Information> that the p
 
         \Exclusions\
 
-            \Categories of Information\  The following categories of information are not <Confidential Information>, and information that comes to fall in the following categories ceases to be <Confidential Information>:
+            \Public Information\  Public information that is or becomes public, other than as a result of breach of this agreement, is not, or ceases to be, <Confidential Information>.
 
-                \Public\  public information that became public, other than as a result of breach of this agreement
+            \Otherwise Acquired Information\  Information that the <Receiving Party> received or receives from other than the <Disclosing Party> is not <Confidential Information>, unless the disclosure breached a confidentiality obligation to the <Disclosing Party> that the <Disclosing Party> made known to the <Receiving Party>.
 
-                \Acquired Otherwise\  information that <Receiving Party> <Personnel> received from other than <Disclosing Party> <Personnel>, unless the disclosure breached a confidentiality obligation to the <Disclosing Party> that <Disclosing Party> <Personnel> made known to <Receiving Party> <Personnel>
-
-                \Independently Developed\  information the <Receiving Party> <Personnel> developed independently
-
-            \Burden of Proof\  The <Receiving Party> will bear the burden of proving that {Categories of Information} describes a particular piece of information using contemporaneous documentary evidence.
-
+            \Independently Developed Information\  Information the <Receiving Party> developed or develops independently is not, or ceases to be, <Confidential Information> of the <Disclosing Party>.  The <Receiving Party> will bear the burden of proving independent development using contemporaneous documentary evidence.
 
     \Obligations\
         \Covenant Not to Disclose\ ...
