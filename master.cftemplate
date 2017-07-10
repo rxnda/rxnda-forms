@@ -86,6 +86,14 @@ This agreement sets out terms that protect <Confidential Information> the partie
 
     \Clarifications\
 
+        \No Obligation to Disclose\  No terms of this agreement obligate ((if One-Way begin))<Disclosing Party>((end))((if Two-Way begin))either party((end)) to disclose any <Confidential Information>, perform any work, or provide any services.
+
+        \No Obligation to Do Business\  No terms of this agreement obligate either party to enter any business relationship of agreement, related to the <Purpose> or otherwise.
+
+        \No License\  No terms of this agreement grant any license for any patent, trademark, copyright, or other intellectual property.
+
+        \No Warranty\  <Disclosing Party> makes no warranty that <Confidential Information> will be complete or accurate.
+
         \Freedom to Operate\  No terms of this agreement preclude ((if One-Way begin ))<Receiving Party>((end))((if Two-Way begin))either party, as <Receiving Party>,((end)) from:
 
             \\  competing with <Disclosing Party>;
@@ -93,12 +101,6 @@ This agreement sets out terms that protect <Confidential Information> the partie
             \\  entering into any business relationship with any non-party; or
 
             \\  freely assigning and reassigning personnel in its sole discretion.
-
-        \No Obligation to Disclose\  No terms of this agreement obligate ((if One-Way begin))<Disclosing Party>((end))((if Two-Way begin))either party((end)) to disclose any <Confidential Information>, perform any work, or provide any services.
-
-        \No Obligation to Do Business\  No terms of this agreement obligate either party to enter any business relationship of agreement, related to the <Purpose> or otherwise.
-
-        \No License\  No terms of this agreement grant any license for any patent, trademark, copyright, or other intellectual property.
 
     \18 U.S.C. 1833(b)(1) Notice\
 
@@ -118,15 +120,7 @@ This agreement sets out terms that protect <Confidential Information> the partie
 
             \\  does not disclose the trade secret, except pursuant to court order.
 
-    \Warranty of Right to Disclose\ ...
-
     \Equitable Remedies Recital\  Breach of any obligation under this agreement could cause irreparable harm that money damages could not adequately compensate.  ((if One-Way begin))<Disclosing Party>((end))((if Two-Way begin))Either party, as <Disclosing Party>,((end)) will be entitled to seek an injunction, restraining order, and other equitable remedies for breach of this agreement, without posting bond or security, and without proving actual damages.
-
-    \Warranty Disclaimer\ ...
-
-    \Security Precautions\ ...
-        \Care for Own Confidential Information\ ...
-        \Reasonable Care\ ...
 
     \Term\
 
