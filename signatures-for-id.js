@@ -3,11 +3,17 @@ var id = process.argv[2]
 var split = id.split('-')
 
 var information = ['date', 'email']
+var header = (
+  'The parties are signing this agreement ' +
+  'on the dates by their signatures.'
+)
 var business = {
+  header: header,
   entities: [{}],
   information: information
 }
 var individual = {
+  header: header,
   information: information
 }
 
@@ -19,12 +25,6 @@ if (split.includes('I2B')) {
 } else {
   signatures = [clone(business), clone(business)]
 }
-
-signatures[0].header = (
-  'The parties are signing this agreement ' +
-  'on the dates by their signatures.'
-)
-signatures[1].samePage = true
 
 if (split.includes('1W')) {
   signatures[0].term = 'Disclosing Party'
