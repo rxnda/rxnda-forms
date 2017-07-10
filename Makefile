@@ -32,7 +32,7 @@ $(OUTPUT)/%.docx: $(OUTPUT)/%.cform $(OUTPUT)/%.signatures blanks.json | $(COMMO
 $(OUTPUT)/%.cform: master.cftemplate $(OUTPUT)/%.options | $(CFTEMPLATE) $(OUTPUT)
 	$(CFTEMPLATE) $< $(OUTPUT)/$*.options > $@
 
-$(OUTPUT)/%.options: | $(OUTPUT)
+$(OUTPUT)/%.options: options-for-id.js | $(OUTPUT)
 	./options-for-id.js $* > $@
 
 $(OUTPUT)/%.json: $(OUTPUT)/%.cform | $(COMMONFORM) $(OUTPUT)
