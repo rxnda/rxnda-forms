@@ -65,14 +65,32 @@ This agreement sets out terms that protect <Confidential Information> the partie
         \Data Security\ ...
 
     \Clarifications\
-        \No Business Relationship\ ...
-        \Freedom to Operate\ ...
-        \No Obligation to Disclose\ ...
-        \No License\ ...
-        \No Obligation to do the Deal\ ...
+
+        \Freedom to Operate\  No terms of this agreement preclude ((if One-Way begin ))the <Receiving Party>((end))((if Two-Way begin))either party, as <Receiving Party>,((end)) from:
+
+            \\  competing with the <Disclosing Party>;
+
+            \\  entering into any business relationship with any non-party; or
+
+            \\  freely assigning and reassigning personnel in its sole discretion.
+
+        \No Obligation to Disclose\  No terms of this agreement obligate ((if One-Way begin))the <Disclosing Party>((end))((if Two-Way begin))either party((end)) to disclose any <Confidential Information>, perform any work, or provide any services.
+
+        \No Obligation to Do Business\  No terms of this agreement obligate either party to enter any business relationship of agreement, related to the <Purpose> or otherwise.
+
+        \No License\  No terms of this agreement grant any license for any patent, trademark, copyright, or other intellectual property.
 
     \Notices\
-        \DTSA Notice\ ...
+
+        \18 U.S.C. section 1833(b)(1) Notice\  An individual shall not be held criminally or civilly liable under any Federal or State trade secret law for the disclosure of a trade secret that:
+
+            \\  is made:
+
+                \\  in confidence to a Federal, State, or local government official, either directly or indirectly, or to an attorney; and
+
+                \\  solely for the purpose of reporting or investigating a suspected violation of law; or
+
+            \\  is made in a complaint or other document filed in a lawsuit or other proceeding, if such filing is made under seal.
 
     \Warranty of Right to Disclose\ ...
     \Equitable Remedies Recital\ ...
@@ -90,5 +108,11 @@ This agreement sets out terms that protect <Confidential Information> the partie
         \Termination by Notice\ ...
 
     \General Contract Terms\
-        \Governing Law\ ...
+
+        \No Assignment\  Neither party may assign any right under this agreement without the prior, signed, written permission of the other party.  Any attempt to assign rights under this agreement has no legal effect.
+
+        \Governing Law\  The law of [Governing Law State] will govern all aspects of this agreement.
+
         \Forum for Litigation\ ...
+
+        \No Business Relationship\ This agreement does not 
