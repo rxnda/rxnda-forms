@@ -1,6 +1,8 @@
 COMMONFORM=node_modules/.bin/commonform
 CFTEMPLATE=node_modules/.bin/cftemplate
 OUTPUT=build
+GIT_TAG = $(strip $(shell git tag -l --points-at HEAD))
+EDITION = $(if $(GIT_TAG),$(GIT_TAG),Development Draft)
 
 IDS=$(shell ./ids.js)
 FORMS=$(basename $(IDS))
@@ -24,10 +26,10 @@ $(OUTPUT):
 	mkdir -p $@
 
 $(OUTPUT)/%.md: $(OUTPUT)/%.cform blanks.json | $(COMMONFORM) $(OUTPUT)
-	$(COMMONFORM) render --format markdown --title "$*" --blanks blanks.json < $< > $@
+	$(COMMONFORM) render --format markdown --title "RxNDA $* $(EDITION)" --blanks blanks.json < $< > $@
 
 $(OUTPUT)/%.docx: $(OUTPUT)/%.cform $(OUTPUT)/%.signatures blanks.json | $(COMMONFORM) $(OUTPUT)
-	$(COMMONFORM) render --format docx --title "$*" --indent-margins --number outline --signatures $(OUTPUT)/$*.signatures --blanks blanks.json < $< > $@
+	$(COMMONFORM) render --format docx --title "RxNDA $* $(EDITION)" --indent-margins --number outline --signatures $(OUTPUT)/$*.signatures --blanks blanks.json < $< > $@
 
 $(OUTPUT)/%.cform: master.cftemplate $(OUTPUT)/%.options | $(CFTEMPLATE) $(OUTPUT)
 	$(CFTEMPLATE) $< $(OUTPUT)/$*.options > $@
