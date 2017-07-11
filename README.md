@@ -4,7 +4,7 @@ open form commercial confidentiality agreements
 
 These forms are under active development toward first editions.  Feedback and contributions are _very_ welcome.  [See `CONTRIBUTING.md`](./CONTRIBUTING.md).
 
-Download the most recent release from [GitHub](https://github.com/rxnda/rxnda-forms/releases) or [commonform.org](https://commonform.org/publications/rxnda), or sign and send online in minutes via [rxnda.com](https://rxnda.com).
+Download the latest from [Google Drive](https://drive.google.com/drive/folders/0B4WQgvqBs9InQkdiSWJjTnN6MEk?usp=sharing), [GitHub](https://github.com/rxnda/rxnda-forms/releases) or [commonform.org](https://commonform.org/publications/rxnda), or sign and send online in minutes via [rxnda.com](https://rxnda.com).
 
 ## Be Warned!
 
