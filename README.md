@@ -18,7 +18,7 @@ The RxNDA Form Confidentiality Agreements are generic confidentiality agreements
 
 - orthodox in substance, ticking all the boxes for NDAs used routinely between United States companies before exploring a sale or collaboration
 
-- relatively modern in style, eschewing WHEREASes, NOW, THEREFOREs, nonsensical recitations of consideration, and other egregious anachronisms, but otherwise taking a prototypically lawyerly tone
+- relatively modern in style, eschewing WHEREASes, NOW THEREFOREs, nonsensical recitations of consideration, and other egregious anachronisms, but otherwise taking a prototypically lawyerly tone
 
 - generic enough to reuse throughout United States jurisdictions
 
@@ -49,7 +49,7 @@ On the other hand:
 
 The `N-1W-B2I` form defines "Confidential Information" more narrowly, covers Confidential Information disclosed only by the first, proposing party to the second, and expects the disclosing party to be a business and the receiving party to be an individual.
 
-Software generates all permutations of broad/narrow, one-way/two-way, and business-to-business, business-to-individual, individual-to-business, and individual-to-individual from a common template.  They share the vast majority of language in common, and are very easy to compare.
+Software generates all permutations of broad/narrow, one-way/two-way, and business-to-busines/business-to-individual/individual-to-business/individual-to-individual from a common template.  They share the vast majority of language in common, and are very easy to compare.
 
 ## Building
 
