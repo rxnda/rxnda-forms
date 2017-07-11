@@ -1,6 +1,6 @@
 #!/usr/bin/env node
-var powerset = require('./powerset')
-var match = powerset.find(function (combination) {
+var permutations = require('./permutations')
+var match = permutations.find(function (combination) {
   var id = combination
     .map(function (element) {
       return element.code

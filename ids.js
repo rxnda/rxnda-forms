@@ -1,7 +1,7 @@
 #!/usr/bin/env node
-var powerset = require('./powerset')
+var permutations = require('./permutations')
 process.stdout.write(
-  powerset
+  permutations
     .map(function (element) {
       return element
         .map(function (option) {
