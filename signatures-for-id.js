@@ -20,9 +20,11 @@ var individual = {
 var signatures
 if (split.includes('I2B')) {
   signatures = [clone(individual), clone(business)]
-} else if (split.includes('I2B')) {
+} else if (split.includes('B2I')) {
   signatures = [clone(business), clone(individual)]
-} else {
+} else if (split.includes('I2I')) {
+  signatures = [clone(individual), clone(individual)]
+} else if (split.includes('B2B')) {
   signatures = [clone(business), clone(business)]
 }
 
