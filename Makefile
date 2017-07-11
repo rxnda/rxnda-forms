@@ -1,8 +1,8 @@
 COMMONFORM=node_modules/.bin/commonform
 CFTEMPLATE=node_modules/.bin/cftemplate
 OUTPUT=build
-GIT_TAG = $(strip $(shell git tag -l --points-at HEAD))
-EDITION = $(if $(GIT_TAG),$(GIT_TAG),Development Draft)
+GIT_TAG=$(strip $(shell git tag -l --points-at HEAD))
+EDITION=$(if $(GIT_TAG),$(GIT_TAG),Development Draft)
 
 IDS=$(shell ./ids.js)
 FORMS=$(basename $(IDS))
