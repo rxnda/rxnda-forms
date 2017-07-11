@@ -12,7 +12,7 @@ MD=$(addprefix $(OUTPUT)/,$(addsuffix .md,$(FORMS)))
 JSON=$(addprefix $(OUTPUT)/,$(addsuffix .json,$(FORMS)))
 TARGETS=$(DOCX) $(PDF) $(MD) $(JSON)
 
-all: docx pdf md cf
+all: docx pdf md json
 
 docx: $(DOCX)
 
