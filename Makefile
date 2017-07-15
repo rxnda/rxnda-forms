@@ -55,10 +55,10 @@ $(COMMONFORM) $(CFTEMPLATE) $(SPELL):
 .PHONY: clean docker lint critique
 
 lint: $(JSON) | $(COMMONFORM)
-	for form in $(JSON); do echo $$form; $(COMMONFORM) lint < $$form; done
+	for form in $(JSON); do echo $$form; $(COMMONFORM) lint < $$form; done | tee lint.log
 
 critique: $(JSON) | $(COMMONFORM)
-	for form in $(JSON); do echo $$form ; $(COMMONFORM) critique < $$form; done
+	for form in $(JSON); do echo $$form ; $(COMMONFORM) critique < $$form; done | tee critique.log
 
 clean:
 	rm -rf $(OUTPUT)
