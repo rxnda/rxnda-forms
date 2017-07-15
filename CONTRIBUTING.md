@@ -10,4 +10,4 @@ If you use GitHub, feel free to open issues or send pull requests.  You can also
 
 See [`LICENSE`](./LICENSE).
 
-The public license has a condition requiring licensing of contributions to the public on the same terms, plus a license to the original author, to relicense in the future.  All the same, please expect that you may be asked for written confirmation acknowledging the license and making your contributions available on its terms.
+The public license has language about licensing contributions.  But please expect that you may be asked for written confirmation acknowledging the license and making your contributions available on its terms.
