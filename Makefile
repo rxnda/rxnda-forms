@@ -25,7 +25,11 @@ json: $(JSON)
 
 manifest: $(OUTPUT)/manifest.json
 
-$(OUTPUT):
+.PHONY: google-drive
+
+google-drive: $(addprefix $(OUTPUT)/google-drive/,$(addsuffix .docx,$(FORMS)))
+
+$(OUTPUT) $(OUTPUT)/google-drive:
 	mkdir -p $@
 
 $(OUTPUT)/%.md: $(OUTPUT)/%.cform | $(COMMONFORM) $(SPELL) $(OUTPUT)
@@ -48,6 +52,9 @@ $(OUTPUT)/%.signatures: signatures-for-id.js | $(OUTPUT)
 
 $(OUTPUT)/manifest.json: $(JSON) build-manifest.js
 	./build-manifest.js "$(EDITION)" > $@
+
+$(OUTPUT)/google-drive/%.docx: $(OUTPUT)/%.docx | $(OUTPUT)/google-drive
+	cp $< $@
 
 .NOTPARALLEL: %.pdf
 
