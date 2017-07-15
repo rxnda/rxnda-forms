@@ -5,6 +5,9 @@ OUTPUT=build
 GIT_TAG=$(strip $(shell git tag -l --points-at HEAD))
 EDITION=$(if $(GIT_TAG),$(GIT_TAG),Development Draft)
 
+FORM_PUBLISHER=RxNDA LLC
+FORM_URL=https://rxnda.com/
+
 IDS=$(shell ./ids.js)
 FORMS=$(basename $(IDS))
 DOCX=$(addprefix $(OUTPUT)/,$(addsuffix .docx,$(FORMS)))
@@ -23,17 +26,19 @@ md: $(MD)
 
 json: $(JSON)
 
+manifest: $(OUTPUT)/manifest.json
+
 $(OUTPUT):
 	mkdir -p $@
 
-$(OUTPUT)/%.md: $(OUTPUT)/%.cform blanks.json | $(COMMONFORM) $(SPELL) $(OUTPUT)
-	$(COMMONFORM) render --format markdown --title "RxNDA $*" --edition "$(shell echo "$(EDITION)" | $(SPELL))" --hash --blanks blanks.json < $< > $@
+$(OUTPUT)/%.md: $(OUTPUT)/%.cform | $(COMMONFORM) $(SPELL) $(OUTPUT)
+	$(COMMONFORM) render --format markdown --title "RxNDA $*" --edition "$(shell echo "$(EDITION)" | $(SPELL))" --hash < $< > $@
 
-$(OUTPUT)/%.docx: $(OUTPUT)/%.cform $(OUTPUT)/%.signatures blanks.json | $(COMMONFORM) $(SPELL) $(OUTPUT)
-	$(COMMONFORM) render --format docx --title "RxNDA $*" --edition "$(shell echo "$(EDITION)" | $(SPELL))" --hash --indent-margins --number outline --signatures $(OUTPUT)/$*.signatures --blanks blanks.json < $< > $@
+$(OUTPUT)/%.docx: $(OUTPUT)/%.cform $(OUTPUT)/%.signatures | $(COMMONFORM) $(SPELL) $(OUTPUT)
+	$(COMMONFORM) render --format docx --title "RxNDA $*" --edition "$(shell echo "$(EDITION)" | $(SPELL))" --hash --indent-margins --number outline --signatures $(OUTPUT)/$*.signatures < $< > $@
 
 $(OUTPUT)/%.cform: master.cftemplate $(OUTPUT)/%.options | $(CFTEMPLATE) $(OUTPUT)
-	$(CFTEMPLATE) $< $(OUTPUT)/$*.options > $@
+	$(CFTEMPLATE) $< $(OUTPUT)/$*.options | sed 's/FORM_PUBLISHER/$(FORM_PUBLISHER)/g' | sed 's!FORM_URL!$(FORM_URL)!g' > $@
 
 $(OUTPUT)/%.options: options-for-id.js | $(OUTPUT)
 	./options-for-id.js $* > $@
@@ -43,6 +48,9 @@ $(OUTPUT)/%.json: $(OUTPUT)/%.cform | $(COMMONFORM) $(OUTPUT)
 
 $(OUTPUT)/%.signatures: signatures-for-id.js | $(OUTPUT)
 	./signatures-for-id.js $* > $@
+
+$(OUTPUT)/manifest.json: $(JSON) build-manifest.js
+	./build-manifest.js "$(EDITION)" > $@
 
 .NOTPARALLEL: %.pdf
 
