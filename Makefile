@@ -5,9 +5,6 @@ OUTPUT=build
 GIT_TAG=$(strip $(shell git tag -l --points-at HEAD))
 EDITION=$(if $(GIT_TAG),$(GIT_TAG),Development Draft)
 
-FORM_PUBLISHER=RxNDA LLC
-FORM_URL=https://rxnda.com/
-
 IDS=$(shell ./ids.js)
 FORMS=$(basename $(IDS))
 DOCX=$(addprefix $(OUTPUT)/,$(addsuffix .docx,$(FORMS)))
@@ -38,7 +35,7 @@ $(OUTPUT)/%.docx: $(OUTPUT)/%.cform $(OUTPUT)/%.signatures | $(COMMONFORM) $(SPE
 	$(COMMONFORM) render --format docx --title "RxNDA $*" --edition "$(shell echo "$(EDITION)" | $(SPELL))" --hash --indent-margins --number outline --signatures $(OUTPUT)/$*.signatures < $< > $@
 
 $(OUTPUT)/%.cform: master.cftemplate $(OUTPUT)/%.options | $(CFTEMPLATE) $(OUTPUT)
-	$(CFTEMPLATE) $< $(OUTPUT)/$*.options | sed 's/FORM_PUBLISHER/$(FORM_PUBLISHER)/g' | sed 's!FORM_URL!$(FORM_URL)!g' > $@
+	$(CFTEMPLATE) $< $(OUTPUT)/$*.options > $@
 
 $(OUTPUT)/%.options: options-for-id.js | $(OUTPUT)
 	./options-for-id.js $* > $@
