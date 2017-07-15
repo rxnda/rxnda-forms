@@ -57,10 +57,10 @@ $(COMMONFORM) $(CFTEMPLATE) $(SPELL):
 test: lint critique
 
 lint: $(JSON) | $(COMMONFORM)
-	for form in $(JSON); do echo $$form; $(COMMONFORM) lint < $$form; done | tee lint.log
+	for form in $(JSON); do $(COMMONFORM) lint < $$form | awk -v prefix="$$(basename $$form .json): " '{print prefix $$0}'; done | tee lint.log
 
 critique: $(JSON) | $(COMMONFORM)
-	for form in $(JSON); do echo $$form ; $(COMMONFORM) critique < $$form; done | tee critique.log
+	for form in $(JSON); do $(COMMONFORM) critique < $$form | awk -v prefix="$$(basename $$form .json): " '{print prefix $$0}'; done | tee critique.log
 
 clean:
 	rm -rf $(OUTPUT)
