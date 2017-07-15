@@ -39,6 +39,10 @@
       {
         "code": "I2B",
         "option": "Individual-to-Business"
+      },
+      {
+        "code": "I2I",
+        "option": "Individual-to-Individual"
       }
     ]
   }
