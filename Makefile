@@ -47,7 +47,11 @@ $(OUTPUT)/%.docx: $(OUTPUT)/%.cform $(OUTPUT)/%.signatures | $(COMMONFORM) $(SPE
 	$(COMMONFORM) render --format docx --title "RxNDA $*" --edition "$(shell echo "$(EDITION)" | $(SPELL))" --hash --indent-margins --number outline --signatures $(OUTPUT)/$*.signatures < $< > $@
 
 $(OUTPUT)/%.cform: master.cftemplate $(OUTPUT)/%.options | $(CFTEMPLATE) $(OUTPUT)
-	$(CFTEMPLATE) $< $(OUTPUT)/$*.options > $@
+ifeq ($(EDITION),Development Draft)
+	$(CFTEMPLATE) $< $(OUTPUT)/$*.options | sed "s!PUBLICATION!This is a development draft of RxNDA $*.!" > $@
+else
+	$(CFTEMPLATE) $< $(OUTPUT)/$*.options | sed "s!PUBLICATION!RxNDA LLC published this form as RxNDA $*, $(shell echo "$(EDITION)" | $(SPELL)).!" > $@
+endif
 
 $(OUTPUT)/%.options: options-for-id.js | $(OUTPUT)
 	./options-for-id.js $* > $@
