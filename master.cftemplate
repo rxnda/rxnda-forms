@@ -16,19 +16,25 @@ This agreement sets out terms that protect <Confidential Information> the partie
 
     \Confidential Information\
 
-        \\ Subject to {Exclusions}, ""Confidential Information"" means information 
+        \\ Subject to {Exclusions}, ""Confidential Information"" means the following kinds of information:
 
-        (( if Broad begin ))
-        related to the business of <Disclosing Party>, 
-        (( end ))
+            (( if Broad begin ))
+            \\  information related to the business of <Disclosing Party>;
+            (( end ))
 
-        (( if Narrow begin ))
-        disclosed in writing that is marked to indicate that it is confidential, and information disclosed otherwise that <Disclosing Party> identifies in writing as confidential within one calendar week, 
-        (( end ))
+            (( if Narrow begin ))
+            \\  information disclosed in writing that is marked to indicate that it is confidential;
 
-        and other information derived from such information. 
+            \\  information disclosed otherwise that <Disclosing Party> identifies in writing as confidential within one calendar week of disclosure;
+            (( end ))
 
-        The existence content of this agreement and the fact that the parties have entered into this agreement are also <Confidential Information>.
+            \\  the fact that the parties are pursuing the <Purpose>;
+
+            \\  other information derived from these kinds of information;
+
+            \\  the terms of this agreement; and
+
+            \\  the fact that the parties have entered into this agreement.
 
         \Exclusions\
 
