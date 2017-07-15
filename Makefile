@@ -1,5 +1,6 @@
 COMMONFORM=node_modules/.bin/commonform
 CFTEMPLATE=node_modules/.bin/cftemplate
+SPELL=node_modules/.bin/reviewers-edition-spell
 OUTPUT=build
 GIT_TAG=$(strip $(shell git tag -l --points-at HEAD))
 EDITION=$(if $(GIT_TAG),$(GIT_TAG),Development Draft)
@@ -25,11 +26,11 @@ json: $(JSON)
 $(OUTPUT):
 	mkdir -p $@
 
-$(OUTPUT)/%.md: $(OUTPUT)/%.cform blanks.json | $(COMMONFORM) $(OUTPUT)
-	$(COMMONFORM) render --format markdown --title "RxNDA $*" --edition "$(EDITION)" --hash --blanks blanks.json < $< > $@
+$(OUTPUT)/%.md: $(OUTPUT)/%.cform blanks.json | $(COMMONFORM) $(SPELL) $(OUTPUT)
+	$(COMMONFORM) render --format markdown --title "RxNDA $*" --edition "$(shell echo "$(EDITION)" | $(SPELL))" --hash --blanks blanks.json < $< > $@
 
-$(OUTPUT)/%.docx: $(OUTPUT)/%.cform $(OUTPUT)/%.signatures blanks.json | $(COMMONFORM) $(OUTPUT)
-	$(COMMONFORM) render --format docx --title "RxNDA $*" --edition "$(EDITION)" --hash --indent-margins --number outline --signatures $(OUTPUT)/$*.signatures --blanks blanks.json < $< > $@
+$(OUTPUT)/%.docx: $(OUTPUT)/%.cform $(OUTPUT)/%.signatures blanks.json | $(COMMONFORM) $(SPELL) $(OUTPUT)
+	$(COMMONFORM) render --format docx --title "RxNDA $*" --edition "$(shell echo "$(EDITION)" | $(SPELL))" --hash --indent-margins --number outline --signatures $(OUTPUT)/$*.signatures --blanks blanks.json < $< > $@
 
 $(OUTPUT)/%.cform: master.cftemplate $(OUTPUT)/%.options | $(CFTEMPLATE) $(OUTPUT)
 	$(CFTEMPLATE) $< $(OUTPUT)/$*.options > $@
@@ -48,7 +49,7 @@ $(OUTPUT)/%.signatures: signatures-for-id.js | $(OUTPUT)
 %.pdf: %.docx
 	doc2pdf $<
 
-$(COMMONFORM) $(CFTEMPLATE):
+$(COMMONFORM) $(CFTEMPLATE) $(SPELL):
 	npm install
 
 .PHONY: clean docker lint critique
