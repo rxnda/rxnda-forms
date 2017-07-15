@@ -4,6 +4,8 @@
     "cftemplate": "^2.0.1",
     "commonform-analyze": "^1.0.0",
     "commonform-cli": "^0.26.0",
-    "reviewers-edition-spell": "^1.1.0"
+    "reviewers-edition-spell": "^1.1.0",
+    "run-parallel": "^1.1.6",
+    "update-google-drive-document": "^0.1.0"
   }
 }
