@@ -14,7 +14,7 @@ console.log(JSON.stringify(
         })
         .join('-')
       var commonform = require('./build/' + id)
-      result[id] = [
+      result['RxNDA ' + id] = [
         {
           title: 'RxNDA ' + id,
           edition: EDITION,
