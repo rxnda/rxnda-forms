@@ -1,6 +1,6 @@
-# RxNDA Form Confidentiality Agreement
+# RxNDA Form Nondisclosure Agreements
 
-open form commercial confidentiality agreements
+open form commercial nondisclosure agreements
 
 These forms are under active development toward first editions.  Feedback and contributions are _very_ welcome.  [See `CONTRIBUTING.md`](./CONTRIBUTING.md).
 
@@ -14,7 +14,7 @@ Download the latest from [Google Drive](https://drive.google.com/drive/folders/0
 
 ## In Brief
 
-The RxNDA Form Confidentiality Agreements are generic confidentiality agreements, also known as nondisclosure agreements or "NDAs", that aim to be:
+The RxNDA form nondisclosure agreements are generic nondisclosure agreements, or "NDAs", that aim to be:
 
 - orthodox in substance, ticking all the boxes for NDAs used routinely between United States companies before exploring a sale or collaboration
 
@@ -22,7 +22,7 @@ The RxNDA Form Confidentiality Agreements are generic confidentiality agreements
 
 - generic enough to reuse throughout United States jurisdictions
 
-RxNDA Form Confidentiality Agreements do _not_ aim to cover situations where specialized, customized, or highly negotiated confidentiality agreements are the rational norm, such as confidentiality agreements:
+RxNDA form nondisclosure agreements do _not_ aim to cover situations where specialized, customized, or highly negotiated nondisclosure agreements are the rational norm, such as agreements:
 
 - incorporating non-compete, non-solicitation, or no-hire provisions
 - in anticipation of potential M&A transactions
@@ -33,7 +33,7 @@ RxNDA Form Confidentiality Agreements do _not_ aim to cover situations where spe
 
 ## Variants
 
-RxNDA Form Confidentiality Agreements come in several variants.  Each variant is identified with a unique code, like `B-2W-B2B` or `N-1W-B2I`.  The codes are easy to read.  For example:
+RxNDA form nondisclosure agreements come in several variants.  Each variant is identified with a unique code, like `B-2W-B2B` or `N-1W-B2I`.  The codes are easy to read.  For example:
 
     B      -      2W      -      B2B
     
