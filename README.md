@@ -58,8 +58,8 @@ The repository has configuration to build copies of the terms in various formats
 If you're alright agreeing to the terms of use for Microsoft's Core Fonts for the Web, for Times New Roman, the easiest way to build is probably with Docker:
 
 ```shellsession
-git clone https://github.com/kemitchell/switchmode
-cd switchmode
+git clone https://github.com/rxnda/rxnda-forms
+cd rxnda-forms
 git checkout $edition
 make docker
 ```
