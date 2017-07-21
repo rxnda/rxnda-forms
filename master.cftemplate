@@ -2,6 +2,7 @@
 # - No spaces inside \Heading Slashes\.
 # - Two spaces after a heading.
 # - Two spaces after each sentence.
+# - Enumerated lists with semicolons. Semicolon and conjunction in penultimate item.
 # Usage Notes:
 # - "shall" for obligations
 # - "materials embodying confidential information"
