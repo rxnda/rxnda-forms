@@ -23,7 +23,7 @@ This agreement sets out terms that protect <Confidential Information> the partie
             (( end ))
 
             (( if Narrow begin ))
-            \\  information disclosed in writing that is marked to indicate that it is confidential;
+            \\  information disclosed in writing that is marked to indicate that it is confidential, such as with words like "confidential", "proprietary", "privileged", and similar;
 
             \\  information disclosed otherwise that <Disclosing Party> identifies in writing as confidential within one calendar week of disclosure;
             (( end ))
