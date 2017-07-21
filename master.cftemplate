@@ -2,6 +2,10 @@
 # - No spaces inside \Heading Slashes\.
 # - Two spaces after a heading.
 # - Two spaces after each sentence.
+# Usage Notes:
+# - "shall" for obligations
+# - "materials embodying confidential information"
+# - "with respect to"
 (( if One-Way begin ))
 This agreement sets out terms that protect <Confidential Information> that ""Disclosing Party"" may disclose to ""Receiving Party"".
 (( end ))
