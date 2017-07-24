@@ -24,13 +24,13 @@ This agreement sets out terms that protect <Confidential Information> the partie
         \\  Subject to {Exclusions}, ""Confidential Information"" means the following kinds of information:
 
             (( if Broad begin ))
-            \\  information related to the business of <Disclosing Party>;
+            \\  information disclosed by <Disclosing Party> during the term of this agreement that is related to the business of <Disclosing Party>;
             (( end ))
 
             (( if Narrow begin ))
-            \\  information disclosed in writing that is marked to indicate that it is confidential, such as with words like "confidential", "proprietary", "privileged", and similar;
+            \\  information disclosed in writing during the term of this agreement that is marked to indicate that it is confidential, such as with words like "confidential", "proprietary", "privileged", and similar;
 
-            \\  information disclosed otherwise that <Disclosing Party> identifies in writing as confidential within one calendar week of disclosure;
+            \\  information otherwise disclosed during the term of this agreement that <Disclosing Party> identifies in writing as confidential within one calendar week of disclosure;
             (( end ))
 
             \\  the fact that the parties are pursuing the <Purpose>;
