@@ -36,15 +36,15 @@ $(OUTPUT) $(OUTPUT)/google-drive:
 	mkdir -p $@
 
 $(OUTPUT)/%.md: $(OUTPUT)/%.cform | $(COMMONFORM) $(SPELL) $(OUTPUT)
-	$(COMMONFORM) render --format markdown --title "RxNDA $*" --edition "$(shell echo "$(EDITION)" | $(SPELL))" --hash < $< > $@
+	$(COMMONFORM) render --format markdown --title "RxNDA $*" --edition "$(shell echo "$(EDITION)" | $(SPELL))" < $< > $@
 
 $(OUTPUT)/%.html: $(OUTPUT)/%.cform header.html | $(COMMONFORM) $(SPELL) $(OUTPUT)
 	cat header.html | sed 's!TITLE!RxNDA $*!' | sed 's!EDITION!$(shell echo "$(EDITION)" | $(SPELL))!' > $@
-	$(COMMONFORM) render --format html5 --title "RxNDA $*" --edition "$(shell echo "$(EDITION)" | $(SPELL))" --hash < $< >> $@
+	$(COMMONFORM) render --format html5 --title "RxNDA $*" --edition "$(shell echo "$(EDITION)" | $(SPELL))" < $< >> $@
 	echo '</body></html>' >> $@
 
 $(OUTPUT)/%.docx: $(OUTPUT)/%.cform $(OUTPUT)/%.signatures | $(COMMONFORM) $(SPELL) $(OUTPUT)
-	$(COMMONFORM) render --format docx --title "RxNDA $*" --edition "$(shell echo "$(EDITION)" | $(SPELL))" --hash --indent-margins --number outline --signatures $(OUTPUT)/$*.signatures < $< > $@
+	$(COMMONFORM) render --format docx --title "RxNDA $*" --edition "$(shell echo "$(EDITION)" | $(SPELL))" --indent-margins --number outline --signatures $(OUTPUT)/$*.signatures < $< > $@
 
 $(OUTPUT)/%.cform: master.cftemplate $(OUTPUT)/%.options | $(CFTEMPLATE) $(OUTPUT)
 ifeq ($(EDITION),Development Draft)
