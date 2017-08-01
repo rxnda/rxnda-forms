@@ -2,6 +2,17 @@
 
 open form commercial nondisclosure agreements
 
+|         |     | Broad                                         | Narrow                                        |
+|---------|-----|-----------------------------------------------|-----------------------------------------------|
+| One-Way | B2B | [B-1W-B2B](https://github.com/rxnda/B-1W-B2B) | [N-1W-B2B](https://github.com/rxnda/N-1W-B2B) |
+|         | B2I | [B-1W-B2I](https://github.com/rxnda/B-1W-B2I) | [N-1W-B2I](https://github.com/rxnda/N-1W-B2I) |
+|         | I2B | [B-1W-I2B](https://github.com/rxnda/B-1W-I2B) | [N-1W-I2B](https://github.com/rxnda/N-1W-I2B) |
+|         | I2I | [B-1W-I2I](https://github.com/rxnda/B-1W-I2I) | [N-1W-I2I](https://github.com/rxnda/N-1W-I2I) |
+| Two-Way | B2B | [B-2W-B2B](https://github.com/rxnda/B-2W-B2B) | [N-2W-B2B](https://github.com/rxnda/N-2W-B2B) |
+|         | B2I | [B-2W-B2I](https://github.com/rxnda/B-2W-B2I) | [N-2W-B2I](https://github.com/rxnda/N-2W-B2I) |
+|         | I2B | [B-2W-I2B](https://github.com/rxnda/B-2W-I2B) | [N-2W-I2B](https://github.com/rxnda/N-2W-I2B) |
+|         | I2I | [B-2W-I2I](https://github.com/rxnda/B-2W-I2I) | [N-2W-I2I](https://github.com/rxnda/N-2W-I2I) |
+
 Feedback and contributions are _very_ welcome.  [See `CONTRIBUTING.md`](./CONTRIBUTING.md).
 
 Download the latest from [Google Drive](https://drive.google.com/drive/folders/0B4WQgvqBs9InQkdiSWJjTnN6MEk?usp=sharing), GitHub, or [commonform.org](https://commonform.org/publications/rxnda), or sign and send online in minutes via [rxnda.com](https://rxnda.com).
@@ -32,17 +43,6 @@ RxNDA form nondisclosure agreements do _not_ aim to cover situations where speci
 ## Variants
 
 RxNDA form nondisclosure agreements come in several variants, each developed in its own Git repository.  Each variant is identified with a unique code, like `B-2W-B2B` or `N-1W-B2I`.
-
-|         |     | Broad                                         | Narrow                                        |
-|---------|-----|-----------------------------------------------|-----------------------------------------------|
-| One-Way | B2B | [B-1W-B2B](https://github.com/rxnda/B-1W-B2B) | [N-1W-B2B](https://github.com/rxnda/N-1W-B2B) |
-|         | B2I | [B-1W-B2I](https://github.com/rxnda/B-1W-B2I) | [N-1W-B2I](https://github.com/rxnda/N-1W-B2I) |
-|         | I2B | [B-1W-I2B](https://github.com/rxnda/B-1W-I2B) | [N-1W-I2B](https://github.com/rxnda/N-1W-I2B) |
-|         | I2I | [B-1W-I2I](https://github.com/rxnda/B-1W-I2I) | [N-1W-I2I](https://github.com/rxnda/N-1W-I2I) |
-| Two-Way | B2B | [B-2W-B2B](https://github.com/rxnda/B-2W-B2B) | [N-2W-B2B](https://github.com/rxnda/N-2W-B2B) |
-|         | B2I | [B-2W-B2I](https://github.com/rxnda/B-2W-B2I) | [N-2W-B2I](https://github.com/rxnda/N-2W-B2I) |
-|         | I2B | [B-2W-I2B](https://github.com/rxnda/B-2W-I2B) | [N-2W-I2B](https://github.com/rxnda/N-2W-I2B) |
-|         | I2I | [B-2W-I2I](https://github.com/rxnda/B-2W-I2I) | [N-2W-I2I](https://github.com/rxnda/N-2W-I2I) |
 
 The codes are easy to read.  For example:
 
