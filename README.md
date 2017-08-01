@@ -2,9 +2,9 @@
 
 open form commercial nondisclosure agreements
 
-These forms are under active development toward first editions.  Feedback and contributions are _very_ welcome.  [See `CONTRIBUTING.md`](./CONTRIBUTING.md).
+Feedback and contributions are _very_ welcome.  [See `CONTRIBUTING.md`](./CONTRIBUTING.md).
 
-Download the latest from [Google Drive](https://drive.google.com/drive/folders/0B4WQgvqBs9InQkdiSWJjTnN6MEk?usp=sharing), [GitHub](https://github.com/rxnda/rxnda-forms/releases) or [commonform.org](https://commonform.org/publications/rxnda), or sign and send online in minutes via [rxnda.com](https://rxnda.com).
+Download the latest from [Google Drive](https://drive.google.com/drive/folders/0B4WQgvqBs9InQkdiSWJjTnN6MEk?usp=sharing), GitHub, or [commonform.org](https://commonform.org/publications/rxnda), or sign and send online in minutes via [rxnda.com](https://rxnda.com).
 
 ## Be Warned!
 
@@ -17,9 +17,7 @@ Download the latest from [Google Drive](https://drive.google.com/drive/folders/0
 The RxNDA form nondisclosure agreements are generic nondisclosure agreements, or "NDAs", that aim to be:
 
 - orthodox in substance, ticking all the boxes for NDAs used routinely between United States companies before exploring a sale or collaboration
-
 - relatively modern in style, eschewing WHEREASes, NOW THEREFOREs, nonsensical recitations of consideration, and other egregious anachronisms, but otherwise taking a prototypically lawyerly tone
-
 - generic enough to reuse throughout United States jurisdictions
 
 RxNDA form nondisclosure agreements do _not_ aim to cover situations where specialized, customized, or highly negotiated nondisclosure agreements are the rational norm, such as agreements:
@@ -33,7 +31,26 @@ RxNDA form nondisclosure agreements do _not_ aim to cover situations where speci
 
 ## Variants
 
-RxNDA form nondisclosure agreements come in several variants.  Each variant is identified with a unique code, like `B-2W-B2B` or `N-1W-B2I`.  The codes are easy to read.  For example:
+RxNDA form nondisclosure agreements come in several variants, each developed in its own Git repository.  Each variant is identified with a unique code, like `B-2W-B2B` or `N-1W-B2I`.
+
+- [B-1W-B2B](https://github.com/rxnda/B-1W-B2B)
+- [B-1W-B2I](https://github.com/rxnda/B-1W-B2I)
+- [B-1W-I2B](https://github.com/rxnda/B-1W-I2B)
+- [B-1W-I2I](https://github.com/rxnda/B-1W-I2I)
+- [B-2W-B2B](https://github.com/rxnda/B-2W-B2B)
+- [B-2W-B2I](https://github.com/rxnda/B-2W-B2I)
+- [B-2W-I2B](https://github.com/rxnda/B-2W-I2B)
+- [B-2W-I2I](https://github.com/rxnda/B-2W-I2I)
+- [N-1W-B2B](https://github.com/rxnda/N-1W-B2B)
+- [N-1W-B2I](https://github.com/rxnda/N-1W-B2I)
+- [N-1W-I2B](https://github.com/rxnda/N-1W-I2B)
+- [N-1W-I2I](https://github.com/rxnda/N-1W-I2I)
+- [N-2W-B2B](https://github.com/rxnda/N-2W-B2B)
+- [N-2W-B2I](https://github.com/rxnda/N-2W-B2I)
+- [N-2W-I2B](https://github.com/rxnda/N-2W-I2B)
+- [N-2W-I2I](https://github.com/rxnda/N-2W-I2I)
+
+The codes are easy to read.  For example:
 
     B      -      2W      -      B2B
     
@@ -48,24 +65,3 @@ On the other hand:
     Narrow        One-Way        Business-to-Individual
 
 The `N-1W-B2I` form defines "Confidential Information" more narrowly, covers Confidential Information disclosed only by the first, proposing party to the second, and expects the disclosing party to be a business and the receiving party to be an individual.
-
-Software generates all permutations of broad/narrow, one-way/two-way, and business-to-busines/business-to-individual/individual-to-business/individual-to-individual from a common template.  They share the vast majority of language in common, and are very easy to compare.
-
-## Building
-
-The repository has configuration to build copies of the terms in various formats, including Word, PDF, Markdown, and Common Form.
-
-If you're alright agreeing to the terms of use for Microsoft's Core Fonts for the Web, for Times New Roman, the easiest way to build is probably with Docker:
-
-```shellsession
-git clone https://github.com/rxnda/rxnda-forms
-cd rxnda-forms
-git checkout $edition
-make docker
-```
-
-The `Dockerfile` uses a Debian Linux base image for Node.js, and installs other build tools from Debian package repositories.  If you want to build without Docker, have a look at the `RUN` lines in `Dockerfile` to see what you'll need.
-
-## License
-
-See [`LICENSE`](./LICENSE).
